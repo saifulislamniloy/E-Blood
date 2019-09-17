@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eblood">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.eblood.ScrollingActivity"
+            android:label="E-Blood"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.eblood.SearchActivity"
+            android:label="Search" />
+        <activity
+            android:name="com.example.eblood.AboutActivity"
+            android:label="About" />
+        <activity
+            android:name="com.example.eblood.InformationActivity"
+            android:label="Information" />
+        <activity
+            android:name="com.example.eblood.Register"
+            android:label="Register" />
+        <activity
+            android:name="com.example.eblood.AvailableDonors"
+            android:label="Available Donors" />
+        <activity
+            android:name="com.example.eblood.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

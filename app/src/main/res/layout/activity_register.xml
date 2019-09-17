@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eblood.Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:padding="5dp"
+            android:text="Registration form"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@drawable/register_background"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.5"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:text="Name"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="@drawable/register_background"/>
+
+            <EditText
+                android:id="@+id/registrationFormName"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:hint="@string/reg1_text"
+                android:layout_marginTop="8dp"
+                android:textSize="25dp"/>/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.5"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:text="Blood group"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="@drawable/register_background"/>
+
+            <Spinner
+                android:id="@+id/registrationFormBloodGroup"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:entries="@array/bloodGroup" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:layout_weight="0.5"
+                android:padding="5dp"
+                android:text="Division"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="@drawable/register_background"/>
+
+            <Spinner
+                android:id="@+id/registrationFormDivision"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:padding="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:layout_weight="0.5"
+            android:padding="5dp"
+            android:text="District"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@drawable/register_background"/>
+
+        <Spinner
+            android:id="@+id/registrationFormDistrict"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:padding="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:layout_weight="0.5"
+                android:padding="5dp"
+                android:text="Thana"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="@drawable/register_background"/>
+
+            <Spinner
+                android:id="@+id/registrationFormThana"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:entries="@array/district" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.5"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:text="Phone Number"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="@drawable/register_background"/>
+
+            <EditText
+                android:id="@+id/registrationFormPhoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:hint="01XXXXXXXX"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:textSize="25dp"/>/>
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/registrationFormGetVerificationCode"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:text="Get verification code"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/register_background"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_below="@id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/editText_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:hint="Enter verification code: "
+            android:textSize="25dp"/>
+
+        <Button
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/registrationFormRegister"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/register_background"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
